@@ -1,0 +1,17 @@
+---
+- homebrew_cask: name={{ item }} state=present
+  ignore_errors: true
+  with_items:
+  - google-chrome
+  - teamviewer
+  - slack
+  - docker
+  - cheatsheet
+  - virtualbox
+  - iterm2
+  - expandrive
+  - 1password
+  - cheatsheet
+  - dash
+  - cord
+  - shimo
