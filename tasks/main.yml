@@ -1,0 +1,15 @@
+---
+- name: install homebrew packagers
+  include: homebrew.yml
+  tags:
+    - homebrew
+
+- name: install brew packagers
+  include: brew.yml
+  tags:
+    - brew
+
+- name: install keys
+  include: keys.yml
+  tags:
+    - keys
