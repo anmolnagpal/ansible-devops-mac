@@ -1,6 +1,6 @@
 ---
 
 - name: transfer ssh config /etc/ssh/ssh_config
-  template: src=keys/ssh_config dest=/Users/it-admin/.ssh/config owner=it-admin
+  template: src=keys/ssh_config dest=/Users/{{ username }}/.ssh/config owner=it-admin
   tags:
     - ssh-config
