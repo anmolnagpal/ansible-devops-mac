@@ -1,0 +1,19 @@
+#{{ ansible_managed }}
+
+Host *
+  StrictHostKeyChecking no
+  UserKnownHostsFile /dev/null
+  LogLevel QUIET
+  ControlMaster=no
+  ControlPath=~/.ssh/cm_socket-%r@%h:%p
+  ControlPersist=yes
+  ForwardAgent yes
+  BatchMode yes
+
+Host github.com
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/id_rsa
+  IdentitiesOnly yes
+
+
